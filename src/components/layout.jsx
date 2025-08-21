@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar.jsx";
 import Footer from "./footer.jsx";
+import VirtualAssistant from "./VirtualAssistant.jsx";
 
 function Layout() {
   return (
@@ -9,6 +10,7 @@ function Layout() {
       <main>
         <Outlet /> 
       </main>
+      <VirtualAssistant />  
       <Footer />
     </div>
   );
