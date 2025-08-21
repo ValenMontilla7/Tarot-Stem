@@ -13,7 +13,7 @@ function CardList() {
 
   return (
     <div className="card-list-container">
-      <h1>Tarot STEM</h1>
+      <h1>EL FUTURO NO SE IMPROVISA... SE PREPARA...</h1>
       <div className="card-grid">
         {cards.map(card => (
           <Link key={card.id} to={`/cards/${card.id}`}>

@@ -1,0 +1,130 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(30, 30, 60, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(126, 63, 242, 0.5);
+  z-index: 1000;
+  font-family: 'Cinzel', serif;
+  box-shadow: 0 2px 20px rgba(126, 63, 242, 0.3);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #d8b4fe;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.navbar-logo:hover {
+  color: #e0d4fc;
+  text-shadow: 0 0 15px #7e3ff2;
+  transform: scale(1.05);
+}
+
+.logo-icon {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  filter: drop-shadow(0 0 8px #7e3ff2);
+}
+
+.logo-text {
+  background: linear-gradient(45deg, #d8b4fe, #ae7aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-item {
+  color: #e0d4fc;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-item::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #7e3ff2, #ae7aff);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-item:hover {
+  color: #d8b4fe;
+  background: rgba(126, 63, 242, 0.1);
+  text-shadow: 0 0 8px #7e3ff2;
+  transform: translateY(-2px);
+}
+
+.navbar-item:hover::before {
+  width: 100%;
+}
+
+.navbar-item.active {
+  color: #ae7aff;
+  background: rgba(126, 63, 242, 0.15);
+  box-shadow: 0 0 10px rgba(126, 63, 242, 0.4);
+}
+
+.navbar-item.active::before {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0.75rem 1rem;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-menu {
+    gap: 1rem;
+  }
+  
+  .navbar-item {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-menu {
+    gap: 0.5rem;
+  }
+}
