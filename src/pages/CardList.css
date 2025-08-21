@@ -1,0 +1,73 @@
+.card-list-container {
+  background: url("https://static.videezy.com/system/resources/thumbnails/000/005/014/original/magical-nebula-4k-motion-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #e0d4fc;
+  font-family: 'Cinzel', serif;
+  padding: 10rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.card-list-container h1 {
+  font-size: 2rem;
+  color: #d8b4fe;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #7e3ff2;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.card-item {
+  background: rgba(30, 30, 60, 0.85);
+  border: 2px solid #7e3ff2;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  color: #e0d4fc;
+  box-shadow: 0 0 15px rgba(126, 63, 242, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-item::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  border-radius: 12px;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.card-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(174, 122, 255, 0.8);
+}
+
+.card-item:hover::after {
+  opacity: 1;
+}
+
+.card-list-container a {
+  text-decoration: none;
+}
+
+.card-item img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: block;
+  box-shadow: 0 0 10px rgba(126, 63, 242, 0.4);
+}

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { getCards } from "../services/tarotService";
 import { Link } from "react-router-dom";
+import './CardList.css';
+
 
 function CardList() {
   const [cards, setCards] = useState([]);
@@ -16,8 +18,13 @@ function CardList() {
         {cards.map(card => (
           <Link key={card.id} to={`/cards/${card.id}`}>
             <div className="card-item">
-              Carta
-            </div>
+  <img
+    src={card.arcaneImage.imageSrc}
+    alt={card.arcaneName}
+    className="card-thumbnail"
+  />
+  <p>{card.arcaneName}</p>
+</div>
           </Link>
         ))}
       </div>
