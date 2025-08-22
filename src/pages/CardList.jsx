@@ -13,7 +13,7 @@ function CardList() {
 
   return (
     <div className="card-list-container">
-      <h1>EL FUTURO NO SE IMPROVISA... SE PREPARA...</h1>
+      <h1>𖤓EL FUTURO NO SE IMPROVISA, SE PREPARA𖤓</h1>
       <div className="card-grid">
         {cards.map(card => (
           <Link key={card.id} to={`/cards/${card.id}`}>
