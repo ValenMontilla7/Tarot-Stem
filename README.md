@@ -1,12 +1,85 @@
-# React + Vite
+# 🧿Tarot STEM 🧿Proyecto Factoria F5🧿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Tarot STEM**, Es una aplicación web sobre cartas de tarot con temática esotérica.
 
-Currently, two official plugins are available:
+## 📋 ¿Qué hace este proyecto?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta página web permite:
+- Ver una galería de cartas de tarot.
+- Hacer click en cada carta para ver más detalles.
+- Conocer sobre las "diosas contemporáneas" asociadas a cada carta.
+- Navegar entre diferentes secciones.
+- Interactuar con un asistente virtual que te obsequia una limpieza de aura gratis.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías que usé
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** - Para crear la interfaz de usuario.
+- **Vite** - Para el desarrollo y construcción del proyecto.
+- **React Router** - Para navegar entre páginas.
+- **CSS** - Para los estilos y animaciones.
+- **MockAPI** - Para obtener los datos de las cartas.
+
+## 🚀 Cómo ejecutar el proyecto
+
+### Prerrequisitos
+Necesitas tener instalado:
+- Node.js (versión 16 o superior).
+- npm (viene con Node.js).
+
+## 🎨 Características principales
+
+### Navegación
+- **Inicio**: Página de bienvenida con imagen de fondo.
+- **Cartas**: Galería con todas las cartas disponibles.
+- **Detalle**: Información completa de cada carta.
+
+### Asistente Virtual
+- Aparece como una "brujita" en la esquina.
+- Obsequia una limpieza de aura gratis, y pide el email del usuario para agendar cita.
+- Valida que el email tenga formato correcto.
+
+### Diseño
+- Tema esotérico con colores morados y efectos de brillo.
+- Fondos de galaxias y nebulosas.
+- Animaciones al hacer hover.
+- Diseño responsivo para móviles.
+
+## 🌐 API Externa
+
+El proyecto consume datos de MockAPI:
+
+https://6872278c76a5723aacd3cbb3.mockapi.io/api/v1/tarot
+
+
+Cada carta tiene:
+- Nombre del arcano.
+- Imagen del arcano.
+- Descripción.
+- Diosa contemporánea asociada.
+- Imagen de la diosa.
+
+## 📱 Responsive Design
+
+La página se adapta a diferentes tamaños de pantalla:
+- **Desktop**: Diseño completo con todos los elementos.
+- **Tablet**: Navegación adaptada y elementos ajustados.
+- **Mobile**: Navegación vertical y elementos más compactos.
+
+
+## 📝 Notas del desarrollador
+
+Este es mi primer proyecto sola con React. Todavía estoy aprendiendo, ¡Cualquier feedback es bienvenido!
+
+## 👩‍💻 Autor
+
+**Valentina Montilla**
+- Estudiante del Bootcamp Fullstack de Factoria F5.
+- 📧 [valenmontillaes@gmail.com]
+
+## 📜 Licencia
+
+Este proyecto tiene fines educativos como parte del bootcamp de Factoria F5.
+
+---
+
+✨🔮*¡Gracias por revisar mi proyecto! Espero que te guste!* 🔮✨
